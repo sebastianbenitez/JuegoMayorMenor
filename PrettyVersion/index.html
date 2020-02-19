@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Version Bonita</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+	<script src="https://kit.fontawesome.com/54a3df9f24.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="main" class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="display-5 mb-5">Juego Mayor Menor</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<h3>Numero 1</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<div class="divNumber">
+											<h2 class="display-4" id="Number1">&nbsp;</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 my-3 my-sm-0">
+							<div class="container">
+								<div class="row d-none d-sm-block">
+									<div class="col-12">
+										<h3>&nbsp;</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<i id="response" class="fas fa-angry fa-5x text-danger"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<h3>Numero 2</h3>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<div class="" id="divNumber2">
+											<h2 class="display-4 d-none" id="Number2"></h2>
+											<div class="container my-2">
+												<div class="row">
+													<div class="col-6">
+														<button class="btn btn-outline-warning" onclick="validateHigherLower('higher')"><i class="fas fa-angle-double-up"></i> Mayor</button>
+													</div>
+													<div class="col-6">
+														<button class="btn btn-outline-warning" onclick="validateHigherLower('lower')">Menor <i class="fas fa-angle-double-down"></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+</body>
+</html>

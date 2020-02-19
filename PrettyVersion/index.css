@@ -1,0 +1,13 @@
+#main {
+	position: relative;
+	top: 10vh;
+}
+
+.divNumber {
+	border: solid;
+	border-radius: 10px;
+}
+
+#response {
+	visibility: hidden;
+}
