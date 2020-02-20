@@ -8,6 +8,23 @@
 	border-radius: 10px;
 }
 
-#response {
+#divNumber2 {
+	min-height: 4rem;
+}
+
+/*#response {
 	visibility: hidden;
+	opacity: 0;
+}*/
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 300ms, opacity 6s;
 }
