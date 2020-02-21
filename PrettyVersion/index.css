@@ -17,5 +17,5 @@
 .smoothly-visible {
   visibility: visible;
   opacity: 1;
-  transition: visibility 1s linear 300ms, opacity 5s;
+  transition: visibility 1s linear 300ms, opacity 2.5s;
 }

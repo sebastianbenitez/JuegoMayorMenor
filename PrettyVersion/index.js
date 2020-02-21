@@ -39,7 +39,7 @@ var game = {
 			game.divNumber2Container.classList.add('smoothly-visible');
 
 			game.restoreResults();
-		}, 1250);
+		}, 750);
 	},
 	restoreResults: function () {
 		setTimeout(function () {
@@ -53,7 +53,8 @@ var game = {
 	},
 	newGame: function () {
 		setTimeout(function () {
-			game.h2Number1.innerHTML = game.random2;
+			game.random1 = game.random2;
+			game.h2Number1.innerHTML = game.random1;
 			game.random2 = Math.floor(Math.random()*100);
 
 			game.divNumber2Container.classList.remove('number__div');
@@ -73,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	game.spanResponse = document.getElementById('span--response');
 	game.divNumber2Container = document.getElementById('div--number-2-container');
-	//var divGameButtonsContainer = document.getElementById('div--game-buttons-container');
 	
 	document.getElementById('btn--higher').addEventListener('click', function() {
 		game.guess = 'higher';
@@ -84,58 +84,4 @@ document.addEventListener('DOMContentLoaded', function() {
 		game.playGame();
 	});
 },false);
-
-
-/*function validateHigherLower(guess) {
-	return (guess == 'higher' && random2 > random1) || (guess == 'lower' && random2 < random1);
-}
-
-function setSuccessResponse(spanResponse) {
-	spanResponse.classList.remove('fa-times-circle','text-danger');
-	spanResponse.classList.add('fa-check-circle','text-success');
-}
-
-function setErrorResponse(spanResponse) {
-	spanResponse.classList.remove('fa-check-circle','text-success');
-	spanResponse.classList.add('fa-times-circle','text-danger');
-}
-
-function showResults(spanResponse, divNumber2Container) {
-	spanResponse.classList.remove('fa-angry');
-	divNumber2Container.classList.add('smoothly-hide');
-	setTimeout(function () {		
-		divNumber2Container.classList.add('number__div');
-		divNumber2Container.children[0].textContent = random2;
-		divNumber2Container.children[0].classList.remove('d-none');
-		divNumber2Container.children[1].classList.add('d-none');
-		spanResponse.classList.remove('smoothly-hide');
-		spanResponse.classList.add('smoothly-visible');
-		divNumber2Container.classList.remove('smoothly-hide');
-		divNumber2Container.classList.add('smoothly-visible');
-
-		newGame(spanResponse, divNumber2Container);
-	}, 1250);
-}
-
-function newGame(spanResponse, divNumber2Container) {
-	setTimeout(function () {
-		divNumber2Container.classList.remove('smoothly-visible');
-		divNumber2Container.classList.add('smoothly-hide');
-		spanResponse.classList.remove('smoothly-visible');
-		spanResponse.classList.add('smoothly-hide');
-
-
-	}, 3000);
-}
-
-function playGame(guess, spanResponse, divNumber2Container) {
-	var guessed = validateHigherLower(guess);
-	if (guessed) {
-		setSuccessResponse(spanResponse);
-	} else {
-		setErrorResponse(spanResponse);
-	}
-	showResults(spanResponse, divNumber2Container);
-	//newGame(spanResponse);
-}*/
 
