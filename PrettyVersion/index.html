@@ -9,9 +9,9 @@
 	<script src="https://kit.fontawesome.com/54a3df9f24.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div id="main" class="container-fluid">
+	<div class="container-fluid" id="main">
 		<div class="row">
-			<div class="col-md-6 offset-md-3 text-center">
+			<div class="col-lg-8 offset-lg-2 text-center">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -19,7 +19,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-5">
+						<div class="col-lg-5">
 							<div class="container">
 								<div class="row">
 									<div class="col-12">
@@ -28,28 +28,28 @@
 								</div>
 								<div class="row">
 									<div class="col-12">
-										<div class="divNumber">
-											<h2 class="display-4" id="Number1">&nbsp;</h2>
+										<div class="number__div">
+											<h2 class="display-4" id="h2--number-1">&nbsp;</h2>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-2 my-3 my-sm-0">
+						<div class="col-lg-2 my-3 my-lg-0">
 							<div class="container">
-								<div class="row d-none d-sm-block">
+								<div class="row d-none d-lg-block">
 									<div class="col-12">
 										<h3>&nbsp;</h3>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-12">
-										<i id="response" class="fas fa-angry fa-5x text-danger"></i>
+										<span class="fas fa-angry fa-5x text-danger smoothly-hide" id="span--response"></span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-5">
+						<div class="col-lg-5">
 							<div class="container">
 								<div class="row">
 									<div class="col-12">
@@ -58,15 +58,15 @@
 								</div>
 								<div class="row">
 									<div class="col-12">
-										<div class="" id="divNumber2">
-											<h2 class="display-4 d-none" id="Number2"></h2>
-											<div class="container my-2">
+										<div class="" id="div--number-2-container">
+											<h2 class="display-4 d-none" id="h2--number-2"></h2>
+											<div class="container my-2" id="div--game-buttons-container">
 												<div class="row">
 													<div class="col-6">
-														<button class="btn btn-outline-warning" onclick="validateHigherLower('higher')"><i class="fas fa-angle-double-up"></i> Mayor</button>
+														<button id="btn--higher" class="btn btn-outline-warning"><i class="fas fa-angle-double-up"></i> Mayor</button>
 													</div>
 													<div class="col-6">
-														<button class="btn btn-outline-warning" onclick="validateHigherLower('lower')">Menor <i class="fas fa-angle-double-down"></i></button>
+														<button id="btn--lower" class="btn btn-outline-warning">Menor <i class="fas fa-angle-double-down"></i></button>
 													</div>
 												</div>
 											</div>

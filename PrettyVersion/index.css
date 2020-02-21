@@ -3,11 +3,19 @@
 	top: 10vh;
 }
 
-.divNumber {
+.number__div {
 	border: solid;
 	border-radius: 10px;
 }
 
-#response {
-	visibility: hidden;
+.smoothly-hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s linear 300ms, opacity 2.5s;
+}
+
+.smoothly-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s linear 300ms, opacity 5s;
 }
