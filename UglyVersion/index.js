@@ -4,7 +4,7 @@ function positionTop() {
 }
 
 function marginLeft() {
-	return Math.floor(Math.random() * 70);
+	return Math.floor(Math.random() * 75);
 }
 
 document.addEventListener('DOMContentLoaded',function () {
