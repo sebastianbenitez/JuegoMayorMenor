@@ -3,27 +3,18 @@
 	top: 10vh;
 }
 
-.divNumber {
+.number__div {
 	border: solid;
 	border-radius: 10px;
 }
 
-#divNumber2 {
-	min-height: 4rem;
-}
-
-/*#response {
-	visibility: hidden;
-	opacity: 0;
-}*/
-
-.m-fadeOut {
+.smoothly-hide {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 300ms, opacity 300ms;
 }
 
-.m-fadeIn {
+.smoothly-visible {
   visibility: visible;
   opacity: 1;
   transition: visibility 1s linear 300ms, opacity 6s;
