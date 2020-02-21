@@ -11,11 +11,11 @@
 .smoothly-hide {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s linear 300ms, opacity 300ms;
+  transition: visibility 1s linear 300ms, opacity 2.5s;
 }
 
 .smoothly-visible {
   visibility: visible;
   opacity: 1;
-  transition: visibility 1s linear 300ms, opacity 6s;
+  transition: visibility 1s linear 300ms, opacity 5s;
 }
