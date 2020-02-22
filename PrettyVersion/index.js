@@ -28,42 +28,42 @@ var game = {
 	},
 	showResults: function () {
 		this.divNumber2Container.classList.add('smoothly-hide');
-		setTimeout(function () {		
-			game.divNumber2Container.classList.add('number__div');
-			game.divNumber2Container.children[0].textContent = game.random2;
-			game.divNumber2Container.children[0].classList.remove('d-none');
-			game.divNumber2Container.children[1].classList.add('d-none');
-			game.spanResponse.classList.remove('smoothly-hide');
-			game.spanResponse.classList.add('smoothly-visible');
-			game.divNumber2Container.classList.remove('smoothly-hide');
-			game.divNumber2Container.classList.add('smoothly-visible');
+		setTimeout(function (base) {		
+			base.divNumber2Container.classList.add('number__div');
+			base.divNumber2Container.children[0].textContent = base.random2;
+			base.divNumber2Container.children[0].classList.remove('d-none');
+			base.divNumber2Container.children[1].classList.add('d-none');
+			base.spanResponse.classList.remove('smoothly-hide');
+			base.spanResponse.classList.add('smoothly-visible');
+			base.divNumber2Container.classList.remove('smoothly-hide');
+			base.divNumber2Container.classList.add('smoothly-visible');
 
-			game.restoreResults();
-		}, 750);
+			base.restoreResults();
+		}, 750, this);
 	},
 	restoreResults: function () {
-		setTimeout(function () {
-			game.spanResponse.classList.remove('smoothly-visible');
-			game.spanResponse.classList.add('smoothly-hide');
-			game.divNumber2Container.classList.remove('smoothly-visible');
-			game.divNumber2Container.classList.add('smoothly-hide');
+		setTimeout(function (base) {
+			base.spanResponse.classList.remove('smoothly-visible');
+			base.spanResponse.classList.add('smoothly-hide');
+			base.divNumber2Container.classList.remove('smoothly-visible');
+			base.divNumber2Container.classList.add('smoothly-hide');
 
-			game.newGame();
-		}, 2500);
+			base.newGame();
+		}, 2500, this);
 	},
 	newGame: function () {
-		setTimeout(function () {
-			game.random1 = game.random2;
-			game.h2Number1.innerHTML = game.random1;
-			game.random2 = Math.floor(Math.random()*100);
+		setTimeout(function (base) {
+			base.random1 = base.random2;
+			base.h2Number1.innerHTML = base.random1;
+			base.random2 = Math.floor(Math.random()*100);
 
-			game.divNumber2Container.classList.remove('number__div');
-			game.divNumber2Container.children[0].classList.add('d-none');
-			game.divNumber2Container.children[1].classList.remove('d-none');
+			base.divNumber2Container.classList.remove('number__div');
+			base.divNumber2Container.children[0].classList.add('d-none');
+			base.divNumber2Container.children[1].classList.remove('d-none');
 
-			game.divNumber2Container.classList.remove('smoothly-hide');
-			game.divNumber2Container.classList.add('smoothly-visible');
-		}, 750);
+			base.divNumber2Container.classList.remove('smoothly-hide');
+			base.divNumber2Container.classList.add('smoothly-visible');
+		}, 750, this);
 	},
 }
 
